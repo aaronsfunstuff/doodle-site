@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #8db596;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c7e5c5;
+}
+
+.hero {
+  position: relative;
+  background-image: url('https://i.ytimg.com/vi/2jNPy7rXq3k/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f2f5f3;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #6c7c5c;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#mission img, #who-we-are img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#our-team {
+  background-color: #e8ece7;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  max-width: 280px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  margin: 10px 0 5px;
+  color: #6c7c5c;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 16px;
+}
+
+#testimonials {
+  background-color: #8db596;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #c7e5c5;
+}
+
+#values .values-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  max-width: 220px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+  font-size: 22px;
+  color: #6c7c5c;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  color: #666;
+  font-size: 16px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #6c7c5c;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+#contact form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6c7c5c;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #556b45;
+}
+
+footer {
+  background-color: #8db596;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #c7e5c5;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+}
