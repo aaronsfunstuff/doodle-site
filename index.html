@@ -69,5 +69,71 @@
             </div>
         </div>
     </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"Matcha Sketch created an amazing profile picture that truly captures who I am. I love it!"</p>
+                <cite>- Sarah Johnson</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The pixel art car design is incredible! It's exactly what I needed for my game. Fantastic work!"</p>
+                <cite>- Alex Green</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to embark on a creative project, don't hesitate to reach out!</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:support@matchasketch.com">support@matchasketch.com</a></p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Creative Lane, Artville, CA 90000</p>
+            </div>
+            <a href="mailto:support@matchasketch.com" class="cta-btn">Send Us an Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Matcha Sketch</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Matcha Sketch - Unleash Your Creativity</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.opacity = 1;
+            } else {
+                scrollToTopButton.style.opacity = 0;
+            }
+        });
+    </script>
 </body>
 </html>
+
